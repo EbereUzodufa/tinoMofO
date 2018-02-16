@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>VIAPHONESERVICE</Machine>
+    <WindowsUser>ViaPhone001</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>ae59f789-8b3e-4d3d-bb95-6d18f8f287d6</PackageIdentityName>
+    <PackageIdentityPublisher>CN=ViaPhone001</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <RegisteredManifestChecksum>33CE27D377498FCA8A7FF09BB3CA7273ED800F6A4B13DD3F3AB63D27233CAC03</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>ae59f789-8b3e-4d3d-bb95-6d18f8f287d6_1.0.0.0_neutral__jr89c19bjg1c0</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>ae59f789-8b3e-4d3d-bb95-6d18f8f287d6_jr89c19bjg1c0!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>ae59f789-8b3e-4d3d-bb95-6d18f8f287d6</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=ViaPhone001</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-02-15T15:53:28.038</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\tinoModaFuka.Windows.exe">
+      <PackagePath>tinoModaFuka.Windows.exe</PackagePath>
+      <Modified>2018-02-15T16:38:22.296</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T21:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T21:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T21:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-07-06T21:01:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\tinoModaFuka.Windows.xr.xml">
+      <PackagePath>tinoModaFuka.Windows.xr.xml</PackagePath>
+      <Modified>2018-02-15T16:38:21.907</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2018-02-15T15:53:25.482</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2018-02-15T16:38:21.988</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2018-02-15T15:53:27.334</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

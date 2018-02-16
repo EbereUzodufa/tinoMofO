@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>VIAPHONESERVICE</Machine>
+    <WindowsUser>ViaPhone001</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>ad67c3ee-a1aa-4c50-8624-bcffb5196bac</PackageIdentityName>
+    <PackageIdentityPublisher>CN=ViaPhone001</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.WindowsPhone\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.WindowsPhone\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.WindowsPhone\bin\Debug\tinoModaFuka.WindowsPhone.exe">
+      <PackagePath>tinoModaFuka.WindowsPhone.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.WindowsPhone\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.WindowsPhone\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.WindowsPhone\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.WindowsPhone\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.WindowsPhone\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.WindowsPhone\bin\Debug\tinoModaFuka.WindowsPhone.xr.xml">
+      <PackagePath>tinoModaFuka.WindowsPhone.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.WindowsPhone\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.WindowsPhone\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.WindowsPhone\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
