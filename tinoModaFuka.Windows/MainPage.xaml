@@ -11,9 +11,6 @@
     <Page.DataContext>
         <local:jeez/>
     </Page.DataContext>
-    <Page.Resources>
-        <converter:BooleanToVisibilityConvertor x:Key="visibilityConverter"/>
-    </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -26,28 +23,47 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="150"/>
                     </Grid.ColumnDefinitions>
-                    <Grid Grid.Column="0" Name="JudeMan" >
-                        <StackPanel HorizontalAlignment="Center" Background="WhiteSmoke">
-                            <GridView HorizontalAlignment="Left" Margin="20,20,20,20" VerticalAlignment="Top" ItemsSource="{Binding PersonList2}">
-                                <GridView.ItemTemplate>
-                                    <DataTemplate>
-                                        <StackPanel Background="Blue">
-                                            <Grid Background="Gray" HorizontalAlignment="Center">
-                                                <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="200">
-                                                    <TextBlock Foreground="Gold" Text="{Binding VisitorName}" Visibility="{Binding VisitorName, Converter={StaticResource visibilityConverter}}" HorizontalAlignment="Center"/>
-                                                    <TextBlock Text="{Binding VisitorAge}" Grid.Column="1" Visibility="{Binding VisitorAge, Converter={StaticResource visibilityConverter}}" HorizontalAlignment="Center"/>
-                                                    <TextBlock Text="{Binding VisitorDivision}" Grid.Column="1" Foreground="Red" Visibility="{Binding VisitorDivision, Converter={StaticResource visibilityConverter}}" HorizontalAlignment="Center"/>
-                                                </StackPanel>
-                                            </Grid>
-                                        </StackPanel>
-                                    </DataTemplate>
-                                </GridView.ItemTemplate>
-                            </GridView>
-                        </StackPanel>
+                    <Grid>
+                        <GridView ItemsSource="{Binding PersonList2}">
+                            <GridView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Background="Blue">
+                                        <Grid Background="Gray" Height="150"> <!--Just giving height sets grid fill-->
+                                            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Width="200">
+                                                <TextBlock Foreground="Gold" Text="{Binding VisitorName}" HorizontalAlignment="Center"/>
+                                                <TextBlock Text="{Binding VisitorAge}" Grid.Column="1" HorizontalAlignment="Center"/>
+                                                <TextBlock Text="{Binding VisitorDivision}" Grid.Column="1" Foreground="Red" HorizontalAlignment="Center"/>
+                                            </StackPanel>
+                                        </Grid>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </GridView.ItemTemplate>
+                        </GridView>
                     </Grid>
-                    <Grid Grid.Column="1" Name="JamesBoy">
+
+                    <Grid Grid.Column="1" Name="JudeMan">
+                        <GridView ItemsSource="{Binding PersonList2}"
+                                  IsItemClickEnabled="True">
+                            <GridView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel>
+                                        <Grid Background="WhiteSmoke" HorizontalAlignment="Left" Height="150"  Width="150" >
+                                                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                                                        <TextBlock Foreground="Gold" Text="{Binding VisitorName}" HorizontalAlignment="Center"/>
+                                                        <TextBlock Text="{Binding VisitorAge}" Grid.Column="1" HorizontalAlignment="Center"/>
+                                                        <TextBlock Text="{Binding VisitorDivision}" Grid.Column="1" Foreground="Red" HorizontalAlignment="Center"/>
+                                                    </StackPanel>
+                                            </Grid>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </GridView.ItemTemplate>
+                        </GridView>
+                    </Grid>
+
+                    <Grid Grid.Column="2" Name="JamesBoy">
                         <StackPanel  Visibility="Visible" Background="BurlyWood">
                             <GridView HorizontalAlignment="Left" Margin="20,20,20,20" VerticalAlignment="Top" ItemsSource="{Binding PersonList}" Grid.Column="1">
                                 <GridView.ItemTemplate>
@@ -55,9 +71,9 @@
                                         <StackPanel Background="Blue" Width="200">
                                             <Grid HorizontalAlignment="Center">
                                                 <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
-                                                    <TextBlock Name="txtName" Foreground="Gold" Text="{Binding GuestName}" Visibility="{Binding GuestName, Converter={StaticResource visibilityConverter}}"/>
-                                                    <TextBlock Text="{Binding GuestAge}" Grid.Column="1" Visibility="{Binding GuestAge, Converter={StaticResource visibilityConverter}}"/>
-                                                    <TextBlock Text="{Binding GuestDivision}" Grid.Column="1" Foreground="Red" Visibility="{Binding GuestDivision, Converter={StaticResource visibilityConverter}}"/>
+                                                    <TextBlock Name="txtName" Foreground="Gold" Text="{Binding GuestName}" Visibility="{Binding GuestName}"/>
+                                                    <TextBlock Text="{Binding GuestAge}" Grid.Column="1"/>
+                                                    <TextBlock Text="{Binding GuestDivision}" Grid.Column="1" Foreground="Red"/>
                                                 </StackPanel>
                                             </Grid>
                                         </StackPanel>
@@ -66,7 +82,7 @@
                             </GridView>
                         </StackPanel>
                     </Grid>
-                    <Grid Name="Maddy" Grid.Column="2" Background="Black">
+                    <Grid Name="Maddy" Grid.Column="3" Background="Black">
                         <StackPanel>
                             <TextBlock Text="Pinky" FontSize="23"/>
                         </StackPanel>
@@ -74,6 +90,8 @@
                 </Grid>
             </StackPanel>
         </Grid>
+
+        <!--Nav Buttons-->
         <Grid Grid.Row="0" Background="Red">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -81,8 +99,12 @@
             <StackPanel Orientation="Horizontal" Name="stackButtons" Margin="20,20,20,20" Background="Black">
                 <Button Name="btnVisitor" Content="Show Visitors" Click="btnVisitor_Click"/>
                 <Button Name="btnGuest" Content="Show Guests" Click="btnGuest_Click"/>
+                <Button Name="btnCSV" Content="CSV Page" Click="btnCSV_Click"/>
+                <Button Name="btnExampleHeader" Content="Example Header" Click="btnExampleHeader_Click"/>
+                <Button Name="btnExampleListView" Content="Example Listview" Click="btnExampleListView_Click"/>
+                <Button Name="btnReader" Content="Example Reader" Click="btnReader_Click"/>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="516,0">
+            <StackPanel Orientation="Horizontal" Margin="50,0" HorizontalAlignment="Right">
                 <TextBlock Name="txtTitle" Text="List of Visitors" HorizontalAlignment="Center" FontSize="50" FontWeight="Bold" VerticalAlignment="Center"/>
             </StackPanel>
         </Grid>

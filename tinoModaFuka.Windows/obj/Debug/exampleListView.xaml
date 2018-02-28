@@ -1,0 +1,66 @@
+﻿<Page
+    x:Class="tinoModaFuka.exampleListView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:tinoModaFuka"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="pnlButtons" Grid.Row="0" VerticalAlignment="Stretch" Background="Green">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='6' x:Name="btnFolder" Grid.Column="0"                          HorizontalAlignment="Stretch">
+                Select Folder
+            </Button>
+            <TextBox x:Name="tbxFolder" Grid.Column="1" VerticalAlignment="Stretch" BorderBrush="Black" Background="Pink" Foreground="Black" FontWeight="Bold"></TextBox>
+            <Button x:Name="btnTest" Grid.Column="2"  HorizontalAlignment="Stretch" >
+                Copy
+            </Button>
+        </Grid>
+
+        <Grid  Grid.Row="1">
+            <StackPanel Orientation="Horizontal">
+                <Grid  Width="1000">
+                    <ScrollViewer Grid.Column="0" Width="auto" Background="Purple">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <ListView x:ConnectionId='3' x:Name="lstviewFileName" Header="Filename" Background="Pink" IsItemClickEnabled="True" Grid.Column="0"                                                     IsActiveView="True"                                                                                       />
+                            <ListView x:ConnectionId='4' x:Name="lstviewDate" Header="Date" Background="Plum" IsItemClickEnabled="True" Grid.Column="1" IsActiveView="True"                                  />
+                            <ListView x:ConnectionId='5' x:Name="lstviewFileSize" Header="FileSize MB" Background="Pink" IsItemClickEnabled="True" Grid.Column="2" IsActiveView="True"                                      />
+                        </Grid>
+                    </ScrollViewer>
+                </Grid>
+                <Grid Name="gridDetail" Visibility="Visible" Width="500" HorizontalAlignment="Right">
+                    <StackPanel>
+                        <Button x:ConnectionId='1' Name="btnClose"                        Content="X" Background="Red" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                        <StackPanel  VerticalAlignment="Center">
+                            <TextBlock Text="File Name: "/>
+                            <TextBox Name="txtFileName" />
+                            <TextBlock Text="Date: "/>
+                            <TextBox Name="txtDate" />
+                            <TextBlock Text="File Size: "/>
+                            <TextBox Name="txtFileSize" />
+                            <Button x:ConnectionId='2' Name="btnUpdate"                         Height="50" Width="150" Content="Update"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
+

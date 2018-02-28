@@ -27,7 +27,7 @@ namespace tinoModaFuka
     /// </summary>
     public sealed partial class MainPage : Page
     {
-     
+        
 
         public MainPage()
         {
@@ -39,7 +39,8 @@ namespace tinoModaFuka
             JamesBoy.Visibility = Visibility.Collapsed;
             JudeMan.Visibility = Visibility.Visible;
             txtTitle.Text = "List of Visitors";
-
+            btnVisitor.Background = new SolidColorBrush(Color.FromArgb(255, 225, 65, 169));
+            btnGuest.Background = new SolidColorBrush(Color.FromArgb(1, 0, 0, 0));
         }
 
         private void btnGuest_Click(object sender, RoutedEventArgs e)
@@ -47,6 +48,8 @@ namespace tinoModaFuka
             JamesBoy.Visibility = Visibility.Visible;
             JudeMan.Visibility = Visibility.Collapsed;
             txtTitle.Text = "List of Guests";
+            btnGuest.Background = new SolidColorBrush(Color.FromArgb(255, 225, 65, 169));
+            btnVisitor.Background = new SolidColorBrush(Color.FromArgb(1, 0, 0, 0));
         }
 
         private void Page_LayoutUpdated(object sender, object e)
@@ -54,6 +57,26 @@ namespace tinoModaFuka
             JamesBoy.Visibility = Visibility.Collapsed;
             JudeMan.Visibility = Visibility.Visible;
             txtTitle.Text = "List of Visitors";
+        }
+
+        private void btnCSV_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(csvLearn));
+        }
+
+        private void btnExampleHeader_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(exampleHeader));
+        }
+
+        private void btnExampleListView_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(exampleListView));
+        }
+
+        private void btnReader_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ExampleReader));
         }
 
         //private void Grid_Loaded(object sender, RoutedEventArgs e)

@@ -18,7 +18,6 @@ namespace tinoModaFuka.ViewModels
                 {
                     return Visibility.Visible;
                 }
-
             }
             return Visibility.Collapsed;
         }

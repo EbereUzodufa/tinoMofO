@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="tinoModaFuka.ExampleReader"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:tinoModaFuka"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Button x:Name="btnSelectImage" Content="Select Image" Margin="10" Click="btnSelectImage_Click"/>
+            <Button x:Name="btnSelectMultiImage" Content="Select Multi-Image"  Margin="10" Click="btnSelectMultiImage_Click"/>
+            <Button x:Name="btnSelectTextFile" Content="Select Text File"  Margin="10" Click="btnSelectTextFile_Click"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="300"/>
+            </Grid.ColumnDefinitions>
+            <Grid>
+                <GridView  x:Name="ImagePreview" Background="Pink" CanReorderItems="True">
+                    <!--<StackPanel  HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal"/>-->
+                    <GridView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <ItemsWrapGrid Orientation="Horizontal" ScrollViewer.IsVerticalRailEnabled="True" ScrollViewer.IsVerticalScrollChainingEnabled="True" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                                
+                            </ItemsWrapGrid>
+                        </ItemsPanelTemplate>
+                    </GridView.ItemsPanel>
+                </GridView>
+            </Grid>
+            
+            <ScrollViewer Grid.Column="1">
+                <TextBlock x:Name="FileText"/>
+            </ScrollViewer>
+
+        </Grid>
+    </Grid>
+</Page>

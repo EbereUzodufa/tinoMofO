@@ -28,13 +28,21 @@
     <AppXManifest Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-15T15:53:28.038</Modified>
+      <Modified>2018-02-28T08:31:05.496</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\tinoModaFuka.Windows.exe">
       <PackagePath>tinoModaFuka.Windows.exe</PackagePath>
-      <Modified>2018-02-15T16:38:22.296</Modified>
+      <Modified>2018-02-28T13:03:55.160</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\packages\MyToolkit.2.5.16\lib\portable-net45+wp8+win8+wpa81\MyToolkit.dll">
+      <PackagePath>MyToolkit.dll</PackagePath>
+      <Modified>2016-11-25T15:45:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\packages\MyToolkit.Extended.2.5.16\lib\portable-wpa81+win8\MyToolkit.Extended.dll">
+      <PackagePath>MyToolkit.Extended.dll</PackagePath>
+      <Modified>2016-11-25T15:45:12.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
@@ -58,20 +66,68 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\tinoModaFuka.Windows.xr.xml">
       <PackagePath>tinoModaFuka.Windows.xr.xml</PackagePath>
-      <Modified>2018-02-15T16:38:21.907</Modified>
+      <Modified>2018-02-28T13:03:54.445</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
       <Modified>2018-02-15T15:53:25.482</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\csvLearn.xbf">
+      <PackagePath>csvLearn.xbf</PackagePath>
+      <Modified>2018-02-28T08:30:56.914</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\exampleHeader.xbf">
+      <PackagePath>exampleHeader.xbf</PackagePath>
+      <Modified>2018-02-26T16:00:36.238</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\exampleListView.xbf">
+      <PackagePath>exampleListView.xbf</PackagePath>
+      <Modified>2018-02-27T09:18:23.809</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\ExampleReader.xbf">
+      <PackagePath>ExampleReader.xbf</PackagePath>
+      <Modified>2018-02-28T13:03:54.529</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-02-15T16:38:21.988</Modified>
+      <Modified>2018-02-28T12:40:49.106</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\navView.xbf">
+      <PackagePath>navView.xbf</PackagePath>
+      <Modified>2018-02-22T10:29:04.376</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\SearchResultsPage1.xbf">
+      <PackagePath>SearchResultsPage1.xbf</PackagePath>
+      <Modified>2018-02-22T13:09:25.567</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\testList.xbf">
+      <PackagePath>testList.xbf</PackagePath>
+      <Modified>2018-02-20T11:13:49.027</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\packages\MyToolkit.Extended.2.5.16\lib\portable-wpa81+win8\MyToolkit.Extended\MyToolkit.Extended.xr.xml">
+      <PackagePath>MyToolkit.Extended\MyToolkit.Extended.xr.xml</PackagePath>
+      <Modified>2016-11-25T15:45:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\packages\MyToolkit.Extended.2.5.16\lib\portable-wpa81+win8\MyToolkit.Extended\Controls\DatePicker.xbf">
+      <PackagePath>MyToolkit.Extended\Controls\DatePicker.xbf</PackagePath>
+      <Modified>2016-11-25T15:45:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\packages\MyToolkit.Extended.2.5.16\lib\portable-wpa81+win8\MyToolkit.Extended\Controls\TimePicker.xbf">
+      <PackagePath>MyToolkit.Extended\Controls\TimePicker.xbf</PackagePath>
+      <Modified>2016-11-25T15:45:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\packages\MyToolkit.Extended.2.5.16\lib\portable-wpa81+win8\MyToolkit.Extended\Themes\Generic.xbf">
+      <PackagePath>MyToolkit.Extended\Themes\Generic.xbf</PackagePath>
+      <Modified>2016-11-25T15:45:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\packages\MyToolkit.Extended.2.5.16\lib\portable-wpa81+win8\MyToolkit.Extended\UI\Popups\ListPickerBox.xbf">
+      <PackagePath>MyToolkit.Extended\UI\Popups\ListPickerBox.xbf</PackagePath>
+      <Modified>2016-11-25T15:45:12.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ViaPhone001\Documents\Visual Studio 2015\Projects\tinoModaFuka\tinoModaFuka\tinoModaFuka.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-02-15T15:53:27.334</Modified>
+      <Modified>2018-02-28T08:31:03.102</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
